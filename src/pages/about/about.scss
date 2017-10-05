@@ -1,3 +1,23 @@
 page-about {
+    .toolbar {
+        &.toolbar-md { //material design only
+            &.history-nav {
+                position: relative;
+                .title-md { //material design only
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    
+}
 
+.list-ios > .item-block:first-child {
+    border-top: none;
 }

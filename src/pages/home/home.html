@@ -1,17 +1,45 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar class="home-nav">
+    <ion-title >SP</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-card>
+      <ion-item>
+    <ion-avatar item-start>
+      <img src="https://pbs.twimg.com/profile_images/684416030874013696/hICN7ttp.jpg">
+    </ion-avatar>
+   <ion-row>
+    <ion-col>
+    <h2>Name:</h2>
+    <h2>Surname:</h2>
+    <h2>Balance:</h2>
+    </ion-col>
+    
+    <ion-col>
+    <h2>Bob</h2>
+    <h2>Smith</h2>
+    <h2>R50</h2>
+    </ion-col>
+     <!--<h2>Balance:<span style="padding-left:3%">R50</span></h2>-->
+   </ion-row> 
+      </ion-item>
+    <ion-card-content>
+<ion-list inset>
+
+    <input style="border-radius:50px; padding:3%" type="text" placeholder="Amount">
+
+</ion-list>
+        <!--<button ion-button round outline>Enter Amount</button>-->
+    </ion-card-content>
+       <ion-row>
+     <ion-col width-20 style="text-align: right">
+       <button ion-button clear color="gray">Clear</button>
+     </ion-col>
+     <ion-col width-50 style="text-align: left">  
+       <button ion-button round outline>Pay</button>
+     </ion-col>  
+    </ion-row>
+  </ion-card>
 </ion-content>
